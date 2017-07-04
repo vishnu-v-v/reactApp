@@ -3,11 +3,14 @@ import React from 'react';
 class App extends React.Component {
    render() {
 
-      var i = 1;
+      var myStyle = {
+         fontSize: 100,
+         color: '#FF0000'
+      }
 
       return (
          <div>
-            <h1>{i == 1 ? 'True!' : 'False'}</h1>
+            <h1 style = {myStyle}>Header</h1>
          </div>
       );
    }
